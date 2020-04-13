@@ -17,7 +17,7 @@ echo %time% %date% no opsiclientd - we in startwinst >> %logfile%
 
 
 
-net use J: \\%depotip%\opsi_depot /user:%adminuser% %depotpassword% /Persistent:No
+net use J: \\%depotip%\opsi_depot /user:%depotuser% %depotpassword% /Persistent:No
 J:
 cd opsi-client-agent
 call service_setup.cmd /u 
